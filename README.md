@@ -1,5 +1,7 @@
 # Simple Task Manager - Node.js + Express + TypeScript
 
+This is a simple RESTful API project built with **Node.js**, **Express.js**, and **TypeScript**, using **MongoDB Atlas** as the database. It follows a modular structure to ensure scalability and maintainability. The project also uses **Bruno** for API testing and **Jest** for writing unit and integration tests.
+
 ## 📚 Table of Contents
 - [Project Structure](#project-structure)
 - [Requirements](#requirements)
@@ -15,9 +17,6 @@
 - [Known Limitations](#known-limitations)
 - [References](#references)
 - [🙌 Contributions](#-contributions)
-
-
-This is a simple RESTful API project built with **Node.js**, **Express.js**, and **TypeScript**, using **MongoDB Atlas** as the database. It follows a modular structure to ensure scalability and maintainability. The project also uses **Bruno** for API testing and **Jest** for writing unit and integration tests.
 
 ## Project Structure
 
