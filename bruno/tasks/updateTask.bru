@@ -1,0 +1,23 @@
+meta {
+  name: updateTask
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{endpoint}}/tasks/{{taskId}}
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "title": "Task API",
+    "description": "Update Task API",
+    "isCompleted": true
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: getTaskById
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{endpoint}}/tasks/{{taskId}}
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}

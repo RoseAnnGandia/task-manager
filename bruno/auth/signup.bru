@@ -1,0 +1,27 @@
+meta {
+  name: signup
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{endpoint}}/auth/signup
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "password": "juan1234",
+    "email": "juandelacruz1234@gmail.com",
+    "name": "Juan dela cruz"
+  }
+}
+
+script:post-response {
+  bru.setVar("userId", res.body._id);
+}

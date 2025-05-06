@@ -1,0 +1,14 @@
+{
+  "validUser": {
+    "name": "John Doe",
+    "email": "johndoe@gmail.com",
+    "password": "password123!"
+  },
+  "invalidEmail": {
+    "name": "John Doe",
+    "email": "johndoe",
+    "password": "password123!"
+  },
+  "notExistEmail": "notExist@gmail.com",
+  "invalidPassword": "InvalidPassword123!"
+}

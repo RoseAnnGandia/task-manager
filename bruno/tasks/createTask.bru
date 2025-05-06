@@ -1,0 +1,27 @@
+meta {
+  name: createTask
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{endpoint}}/tasks
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "title": "Task API",
+    "description": "Create Task API",
+    "completed": false
+  }
+}
+
+script:post-response {
+  bru.setVar("taskId", res.body._id);
+}

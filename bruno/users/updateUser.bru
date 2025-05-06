@@ -1,0 +1,21 @@
+meta {
+  name: updateUser
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{endpoint}}/users/{{userId}}
+  body: json
+  auth: none
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "name": "Jane Doe"
+  }
+}

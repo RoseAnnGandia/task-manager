@@ -1,0 +1,13 @@
+{
+  "entryPoints": ["README.md","src/**/*.ts"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeExternals": true,
+  "excludeInternal": true,
+  "plugin": ["typedoc-material-theme"],
+  "themeColor": "#cb9820",
+  "tsconfig": "tsconfig.json",
+  "exclude": ["src/*.ts"]
+}
